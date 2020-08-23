@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head>
+		
+		<title>About us</title>
+		
+		<meta charset="UTF-8">
+		<!-- bootstrap -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>		
+				
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<!-- stylesheet for social media icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link rel="stylesheet" href="external.css">
+		
+		<!-- javascript for the clock -->
+		<script>
+				function startTime() {
+				var today = new Date();
+				var h = today.getHours();
+				var m = today.getMinutes();
+				var s = today.getSeconds();
+				m = checkTime(m);
+				s = checkTime(s);
+				document.getElementById('txt').innerHTML =
+				h + ":" + m + ":" + s;
+				var t = setTimeout(startTime, 500);
+				}
+				function checkTime(i) {
+				if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+				return i;
+				}
+		</script>
+		
+	</head>
+	
+<body onload="startTime()">	
+		
+		<!-- navigation bar code -->
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo.jpg" alt="Gluten-free Records" style="width:60px;height:30px;border:0;">
+					</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li> <a href="aboutus.html">About us</a></li>
+					<li> <a href="memo1.html">Memorabilia</a></li>
+					<li> <a href="contactus.html">Contact us</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<!-- main container -->
+		<div class="container">
+	
+			<div class="jumbotron">
+				<h2>About us</h2> 
+			</div>
+  
+   			<div class="row">
+				<div class="abus col-sm-12">
+					<h4>Who are we?</h4>
+						<p>We are a group of music enthusiasts who realized that most of us have loads of CDs, DVDs, records, tapes, T-shirts and all the other memorabilia lying somewhere on the floor around our house. As it happens, someone else might just be looking for that one thing that you find completely useless and that is only collecting dust somewhere on your attic, on a hardwood floor. 
+							So, when looking at other websites online, we realized that no one actually offers fair exchange. Everybody just wants to buy your stuff at a bargain and then resell it at a ridiculous price. We thought it is time to create a platform where music fans can exchange their items fair and square.</p>  
+
+					<h4>How does it work?</h4>
+						<p>We organize a fair once a month where you can bring the stuff you no longer need. Leave those with one of us and we will put it on display. After unloading your trash (but someone else’s gold), browse through the displayed items and take whatever you want – FOR FREE! 
+							After the fair ends, we make a list of top 20 items, take a picture of them and upload them here, under the memorabilia section. If you want to secure an item and ensure that it’s not snatched up right in front of you during the next fair, you just need to click on the link and fill out a form with your personal info. After submitting the form, you will be notified that this items has been reserved. The only thing you need to do is show up for the next fair (before 11) and collect your item. In case you're late, the items are placed on display for other people to take them (your loss, you know). Fair, right?
+							So – enjoy music, share your junk and make sure you don’t miss out on that amazing piece of vinyl you’ve been looking for for years.</p>
+
+					<h4>When and where?</h4>
+					<p>All the dates, times and locations will be announced in advance on the home page.</p> 
+					
+					<!-- clock -->
+					<div id="txt"></div>
+					
+				</div>
+				
+			</div>
+			
+			<!-- social media icons -->
+			<div class="footer">
+				<p>
+					<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+					<a href="https://twitter.com/" class="fa fa-twitter"></a>
+					<a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+					<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+					<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+				</p>
+			</div>	
+			
+		</div>
+	
+	</body>
+
+</html>

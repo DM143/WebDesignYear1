@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head>
+		
+		<title>Glutenfree records</title>
+		
+		<meta charset="UTF-8">
+		<!-- bootstrap -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>		
+				
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<!-- stylesheet for social media icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link rel="stylesheet" href="external.css">
+		
+		<!-- javascript for the clock -->
+		<script>
+				function startTime() {
+				var today = new Date();
+				var h = today.getHours();
+				var m = today.getMinutes();
+				var s = today.getSeconds();
+				m = checkTime(m);
+				s = checkTime(s);
+				document.getElementById('txt').innerHTML =
+				h + ":" + m + ":" + s;
+				var t = setTimeout(startTime, 500);
+				}
+				function checkTime(i) {
+				if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+				return i;
+				}
+		</script>
+		
+	</head>
+	
+	<body onload="startTime()">		
+		
+		<!-- navigation bar code -->
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo.jpg" alt="Gluten-free Records" style="width:60px;height:30px;border:0;">
+					</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li> <a href="aboutus.html">About us</a></li>
+					<li> <a href="memo1.html">Memorabilia</a></li>
+					<li> <a href="contactus.html">Contact us</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<!-- main container -->
+		<div class="container">
+	
+			<div class="jumbotron">
+				<h2>Welcome to Gluten Free Records! This is our pick of the month!</h2> 
+			</div>
+			
+			<div class="row divb">
+				<div class="col-sm-5">
+				<img src="images/tori1.jpg" alt="Tori Amos vynil">
+				</div>
+				<div class="col-sm-7">
+				<h3>Tori Amos - Boys for Pele (vinyl) </h3>
+				<p>Enjoy a classic Tori Amos album.</p>
+				<p><i>"A classicist in many senses of the term, Amos decided to make her status-enforcing third album and (clearly inevitable) wildly ambitious may-as-well-be-a-double album (Pele is 18 songs and 70 minutes long) at the same time. Though she’s too respectful and supportive of her peers to admit this out loud, looking at it now Boys For Pele certainly feels like Amos’ bid to shed the girl-with-a-piano box that many wanted to slot her in and prove that: a) she was just as innovative as PJ Harvey and Björk, then and forever the ne plus ultras of female alt-geniuses and b) for lack of a better way to put it, she could rock just as hard as any of the dudes headlining Lollapalooza. Mission accomplished. Boys For Pele is an album only a rock star would make. It’s way too long, often wildly self-indulgent, and designed to dazzle you with its virtuosity. This, of course, is also what makes it great. It’s also an album that finds Amos leaving nothing in the reserve tanks, wildly flouting any preconceived notion of what “a Tori Amos album” could sound like."</i></p>
+				<p>Read the full <a href="https://www.stereogum.com/1854738/boys-for-pele-turns-20/franchises/the-anniversary/">review</a> and <a href="contactus.html">reserve</a> your copy.</p>
+				</div>
+			</div>
+			
+			<div class="row divb">
+				<div class="col-sm-5">
+				<img src="images/beastie1.jpg" alt="Beastie Boys CD">
+				</div>
+				<div class="col-sm-7">
+				<h3>Beastie Boys Anthology - The Sound of Silence (CD) </h3>
+				<p>The cool sound of the 90s!</p>
+				<p><i>"Visionaries? Once it didn’t seem possible. No joke was too low, no music (hardcore punk, hip-hop, metal) above ridicule. The Beasties rode their often wickedly funny bad taste to the bank, only to later explore subject matter and craft music beyond the world of bongs, beer and groupies that made them early role models for the Limp Bizkit generation. In the last decade, they’ve grown from cartoon hip-hoppers into respected innovators."</i></p>
+				<p>Read the <a href="https://www.rollingstone.com/music/music-album-reviews/anthology-the-sounds-of-science-255513/">review</a> and <a href="contactus.html">reserve</a> your copy.</p>
+				</div>
+			</div>
+			
+			<div class="row divb">
+				<div class="col-sm-5">
+				<img src="images/kraftwerk1.jpg" alt="Kraftwerk T-shirt">
+				</div>
+				<div class="col-sm-7">
+				<h3>Classic Kraftwerk T-shirt</h3>
+				<p>This T-shirt has a lot of miles on it. Just what a true fan would appreciate!</p>
+				</div>
+			</div>
+			
+   			<div class="row divloc">
+				<div class="col-sm-12">
+				<p>Our next meeting is in January. We know you'll be broke after the holidays so this is the perfect time to grab something for free!</p> 
+				<p><b>Date and venue still to be confirmed!!!</b></p> 
+				</div>
+			</div>
+			
+			<!-- clock -->
+			<div id="txt"></div>
+			
+			<!-- social media icons -->
+			<div class="footer">
+				<p>
+				<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+				<a href="https://twitter.com/" class="fa fa-twitter"></a>
+				<a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+				<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+				<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+				</p>
+			</div>	
+			
+		</div>
+		
+		
+		
+			
+			
+	</body>
+
+</html>
